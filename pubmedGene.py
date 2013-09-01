@@ -1,4 +1,6 @@
 # -*- coding: utf8 -*-
+# pubmedGene by @mahler83
+# contact sangzin2@naver.com
 # Entrez pubmed search
 from Bio import Entrez
 from Bio import Medline
