@@ -13,9 +13,13 @@ yearsplit = 2
 ################ Step 1
 # Get input
 q = raw_input("Type your search term and press enter\n: ")
+q = q.strip()
+if q == '':
+	q = 'autism'
 retmax = raw_input("How many abstracts? (Default = 200)\n: ")
-retmax = int(retmax)
-if retmax <= 0:
+try:
+	retmax = int(retmax)
+except:
 	retmax = 200
 
 # Start search
